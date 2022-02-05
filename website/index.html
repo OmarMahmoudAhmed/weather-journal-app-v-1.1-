@@ -1,0 +1,48 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+
+<!-- (A) Head: -->
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- Head ending -->
+
+<!-- (B) Body: -->
+<body>
+<!-- 1- Main app -->
+<div id = "app">
+  <!-- 2- head line -->
+  <div class ="holder headline">
+    Weather Journal App
+  </div>
+  <!-- 3- zip -->
+  <div class ="holder zip">
+    <label for="zip">Enter Zipcode here</label>
+    <input type="text" id="zip" placeholder="enter zip code here">
+  </div>
+  <!-- 4- Felling -->
+  <div class ="holder feel">
+    <label for="feelings">How are you feeling today?</label>
+    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+    <!-- 5- Button -->
+    <button id="generate" type = "submit"> Generate </button>
+  </div>
+  <!-- 6- Entering from user -->
+  <div class ="holder entry">
+    <div class = "title">Most Recent Entry</div>
+   <div id = "entryHolder">
+    <div id = "date"></div> 
+   <div id = "temp"></div>
+   <div id = "content"></div>
+  </div>
+  </div>
+  </div>
+  <!-- linking javascript -->
+<script src="app.js" type="text/javascript"></script>
+</body>
+<!-- Body ending -->
+</html>
